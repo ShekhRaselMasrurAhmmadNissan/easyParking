@@ -1,15 +1,15 @@
 // Importing from all the modules...
-const editProfile = require('./editProfile')
-const manageReservation = require('./manageReserve')
-const profile = require('./profile')
-const reservation = require('./reservation')
-const reserve = require('./reserve')
+const customerEditProfile = require('./editProfile')
+const customerManageReservation = require('./manageReserve')
+const customerProfile = require('./profile')
+const customerReservation = require('./reservation')
+const customerReserve = require('./reserve')
 
 // Exporting Everything
 module.exports = {
-	editProfile,
-	manageReservation,
-	profile,
-	reservation,
-	reserve
+	customerEditProfile,
+	customerManageReservation,
+	customerProfile,
+	customerReservation,
+	customerReserve
 }
