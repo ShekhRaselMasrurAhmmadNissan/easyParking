@@ -1,1 +1,10 @@
-const connectionString = 'mongodb+srv://ShekhRasel:<1r2a3s4e5l!n!i!s!s!a!n>@easy-parking.w0mmc.mongodb.net/EasyParking?retryWrites=true&w=majority'
+const mongoose = require('mongoose')
+
+
+
+const connectDB = (url) => {
+return mongoose.connect(url)
+}
+
+
+module.exports = connectDB
