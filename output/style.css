@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
 }
-
+/* 
 body {
 	display: flex;
 	height: 100vh;
@@ -14,13 +14,13 @@ body {
 	align-items: center;
 	padding: 10px;
 	background: linear-gradient(135deg, #71b7e6, #9b59b6);
-}
+} */
 
 .container {
 	max-width: 700px;
 	width: 100%;
 	background: #fff;
-	padding: 25px 30px;
+	padding: 100px 200px;
 	border-radius: 5px;
 }
 
@@ -132,4 +132,20 @@ form .button input {
 
 form .button input:hover {
 	background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+
+/* For Navigation Bar */
+.nav {
+	line-height: 75px;
+	padding: 0px 100px;
+	z-index: 1;
+}
+
+nav .organization {
+	letter-spacing: 1.5px;
+}
+
+nav ul li a {
+	padding: 0px 32px;
 }
