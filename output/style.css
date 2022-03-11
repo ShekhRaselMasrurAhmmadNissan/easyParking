@@ -149,3 +149,88 @@ nav .organization {
 nav ul li a {
 	padding: 0px 32px;
 }
+
+
+
+
+/* ***About US Page*** */
+.section {
+	width: 100%;
+}
+.section .containerAboutPage {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+	padding: 50px 0px;
+}
+
+.containerAboutPage .title {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.containerAboutPage .title h1 {
+	text-transform: uppercase;
+	font-size: 35px;
+	color: #88941e;
+}
+
+.containerAboutPage .title h1::after {
+	content: "";
+	height: 5px;
+	width: 100px;
+	background-color: #c4d156;
+	border-radius: 25px;
+	display: block;
+	margin: auto;
+}
+
+.content {
+	float: left;
+	width: 55%;
+}
+
+.image-section {
+	float: right;
+	width: 40%;
+}
+
+.image-section img {
+	width: 100%;
+	height: auto;
+}
+
+.content .article h3 {
+	font-size: 1.17em;
+	font-weight: bolder;
+	color: #000000;
+	font-size: 17px;
+}
+
+.content .article p {
+	margin-top: 20px;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+}
+
+.content .article .button {
+	margin-top: 50px;
+}
+
+.content .article .button a {
+	text-decoration: none;
+	padding: 8px 25px;
+	background-color: #88941e;
+	border-radius: 40px;
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 1.5px;
+}
+
+.content .article .button a:hover {
+	color: #fff;
+	background-color: #f28f92;
+	transition: 1s ease;
+}

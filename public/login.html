@@ -6,13 +6,32 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Login</title>
+		<!-- <link rel="stylesheet" href="../output/style.css"> -->
 		<link rel="stylesheet" href="../output/tailwind.css">
 		<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
 		<script src="https://kit.fontawesome.com/b5fc4a05bb.js" crossorigin="anonymous"></script>
 	</head>
 
-	<body class="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-100">
-		<form id="login-form" class="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
+	<body>
+		<!-- Nav Bar -->
+		<nav style="line-height: 75px; padding: 0px 100px; z-index: 1;" class="w-full h-16 bg-slate-300 fixed">
+			<div style="letter-spacing: 1.5px;" class="text-3xl font-bold">
+				<p class="float-left uppercase pt-4"><span class="text-orange-600">Easy</span> <span
+						class="text-green-600">Parking</span>
+				</p>
+			</div>
+			<ul class="float-right">
+				<li class="inline-block list-none"><a style="padding: 0px 32px;" href="#"
+						class="no-underline text-lg uppercase hover:text-emerald-600">Home</a></li>
+				<li class="inline-block list-none"><a style="padding: 0px 32px;" href="http://127.0.0.1:5500/public/aboutPage.html"
+						class="no-underline text-lg uppercase hover:text-emerald-600">About</a></li>
+				<li class="inline-block list-none"><a style="padding: 0px 32px;" href="#"
+						class="no-underline text-lg uppercase hover:text-emerald-600">Services</a></li>
+				<li class="inline-block list-none"><a style="padding: 0px 32px;" href="#"
+						class="no-underline text-lg uppercase hover:text-emerald-600">Contacts</a></li>
+			</ul>
+		</nav>
+		<form id="login-form" class="flex flex-col items-center justify-center w-full flex-1 px-20 py-32 text-center">
 			<div class="bg-white rounded-2xl shadow-2xl flex w-2/3 max-w-4xl">
 				<!-- Sign IN Section -->
 				<div class="w-3/5 p-5">
