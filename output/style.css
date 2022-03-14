@@ -234,3 +234,10 @@ nav ul li a {
 	background-color: #f28f92;
 	transition: 1s ease;
 }
+
+.contactInfo {
+	width: 100%;
+	padding-top: 0px 15px;
+	float: inline-end;
+	display: inline-block;
+}

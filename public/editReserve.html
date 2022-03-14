@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Link the CSS -->
+		<link rel="stylesheet" href="../output/style.css">
+		<link rel="stylesheet" href="../output/tailwind.css">
+		<title>Update Reserve</title>
+	</head>
+
+	<body>
+		<!-- Nav bar -->
+		<nav class="nav w-full h-16 bg-slate-300 fixed">
+			<div class="organization text-3xl font-bold">
+				<p class="float-left uppercase pt-4"><span class="text-orange-600">Easy</span> <span
+						class="text-green-600">Parking</span>
+				</p>
+			</div>
+			<ul class="float-right">
+				<li class="inline-block list-none"><a href="#"
+						class="no-underline text-lg uppercase hover:text-emerald-600">Home</a></li>
+				<li class="inline-block list-none"><a href="/aboutPage.html"
+						class="no-underline text-lg uppercase hover:text-emerald-600">About</a></li>
+				<li class="inline-block list-none"><a href="#"
+						class="no-underline text-lg uppercase hover:text-emerald-600">Services</a></li>
+				<li class="inline-block list-none"><a href="#"
+						class="no-underline text-lg uppercase hover:text-emerald-600">Contacts</a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<div class="title">Update Reserve</div>
+			<form action="#" id="updateReserve-form">
+				<div class="user-details">
+					<!-- Customer Name -->
+					<div class="input-box">
+						<span class="details">Name</span>
+						<input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+					</div>
+
+					<!-- Phone Number -->
+					<div class="input-box">
+						<span class="details">Phone Number</span>
+						<input type="text" name="phoneNumber" id="phoneNumber" placeholder="Enter Your Phone Number"
+							required>
+					</div>
+
+					<!-- Car Registration Number -->
+					<div class="input-box">
+						<span class="details">Car Registration Number</span>
+						<input type="text" name="carRegistrationNumber" id="carRegistrationNumber"
+							placeholder="Enter Your cars Registration Number (Ex. Dhaka Metro Ca 19-2409)" required>
+					</div>
+
+					<!-- Entry Date -->
+					<div class="input-box">
+						<span class="details">Entry Date</span>
+						<input type="date" name="entryDate" id="entryDate" placeholder="Enter Your Entry Date" required>
+					</div>
+
+					<!-- Exit Date -->
+					<div class="input-box">
+						<span class="details">Exit Date</span>
+						<input type="date" name="exitDate" id="exitDate" placeholder="Enter Your Exit Date" required>
+					</div>
+
+					<!-- Parking Cost Per Day -->
+					<div class="input-box">
+						<span class="details">Parking Cost Per Day (BDT)</span>
+						<input type="Number" name="parkingCostPerDay" id="parkingCostPerDay" disabled>
+					</div>
+
+					<!-- Cumulative Cost -->
+					<div class="input-box">
+						<span class="details">Cumulative Cost (BDT)</span>
+						<input type="number" name="parkingSpace" id="parkingSpace" disabled>
+					</div>
+
+
+					<!--
+					<!-- Password -->
+					<!-- <div class="input-box"> -->
+					<!-- <span class="details">Password</span> -->
+					<!-- <input type="password" name="password" id="password" placeholder="Enter Your Password" required> -->
+					<!-- </div> -->
+
+					<!-- Confirm Password -->
+					<!-- <div class="input-box"> -->
+					<!-- <span class="details">Confirm Password</span> -->
+					<!-- <input type="password" name="confirmPassword" id="confirmPassword"
+							placeholder="Confirm Your Password" required> -->
+					<!-- </div> -->
+				</div>
+				<!-- Gender Details -->
+				<!-- <div class="gender-details">
+					<input type="radio" name="gender" id="dot-1">
+					<input type="radio" name="gender" id="dot-2">
+					<span class="gender-title">Gender</span>
+					<div class="category">
+						<!-- Male -->
+				<!-- <label for="dot-1">
+							<span class="dot one"></span>
+							<span class="gender">Male</span>
+						</label> -->
+				<!-- Female -->
+				<!-- <label for="dot-2">
+							<span class="dot two"></span>
+							<span class="gender">Female</span>
+						</label> -->
+				<!-- </div> -->
+				<!-- </div> -->
+				<!-- Register Button -->
+				<div class="button">
+					<input type="submit" value="Update Reserve">
+				</div>
+			</form>
+		</div>
+	</body>
+
+</html>
