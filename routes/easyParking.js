@@ -42,7 +42,7 @@ router.route('/customerReserve').post(customerReserve)
 router.route('/agentAddGarage').post(agentAddGarage)
 router.route('/agentEditProfile').patch(agentEditProfile)
 router.route('/agentManageGarage').patch(agentManageGarage)
-router.route('/agentProfile').get(agentProfile)
+router.route('/agentProfile/:id').get(agentProfile)
 router.route('/agentReservations').get(agentReservations)
 
 // Exporting

@@ -75,24 +75,28 @@ form .user-details .details {
 	border-color: #9b59b6;
 }
 
-form .gender-details .gender-title {
+form .user-types {
+	margin-top: 20px;
+}
+
+form .user-types .user-title {
 	font-size: 20px;
 	font-weight: 500;
 }
 
-form .gender-details .category {
+form .user-types .category {
 	display: flex;
 	width: 80%;
 	margin: 14px 0;
 	justify-content: space-between;
 }
 
-form .gender-details .category label {
+form .user-types .category label {
 	display: flex;
 	align-items: center;
 }
 
-form .gender-details .category .dot {
+form .user-types .category .dot {
 	height: 18px;
 	width: 18px;
 	background: #d9d9d9;

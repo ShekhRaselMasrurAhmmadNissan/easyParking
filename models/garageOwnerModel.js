@@ -1,10 +1,10 @@
 const mongoose = require('mongoose')
 
-const customerSchema = new mongoose.Schema({
+const garageOwnerSchema = new mongoose.Schema({
 	firstName: {
 		type: String,
 		trim: true,
-		required: [true, 'Must Provide First Name'],
+		required:[true, 'Must Provide First Name'],
 		maxlength: [15, 'First Name Can Not be More Than 15 Characters'],
 		minlength: [2, 'First Name Can Not be Less Than 2 Characters']
 	},
@@ -18,18 +18,18 @@ const customerSchema = new mongoose.Schema({
 	email: {
 		type: String,
 		trim: true,
-		required: [true, 'Must Provide Email']
+		required:[true, 'Must Provide Email']
 	},
 	phoneNumber: {
 		type: String,
-		required: [true, 'Must Provide Phone Number']
+		required: [true, 'Must Provide a Phone Number']
 	},
 	password: {
 		type: String,
 		trim: true,
-		required: [true, 'Must Provide Password'],
-		minlength: [6, 'Password Can not Be Less Than 6 Characters']
+		required: [true, 'Must Provide a Password'],
+		minlength: [6, 'Password Can Not be Less Than 6 Characters']
 	},
 })
 
-module.exports = mongoose.model('CustomerInformation', customerSchema)
+module.exports = mongoose.model('GarageOwnerInformation', garageOwnerSchema)

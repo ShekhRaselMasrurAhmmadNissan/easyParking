@@ -1,98 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Link the CSS -->
-	<link rel="stylesheet" href="../output/style.css">
-	<link rel="stylesheet" href="../output/tailwind.css">
-	<title>Registration</title>
-</head>
-<body>
-	<!-- Nav bar -->
-	<nav class="nav w-full h-16 bg-slate-300 fixed">
-		<div class="organization text-3xl font-bold">
-			<p class="float-left uppercase pt-4"><span class="text-orange-600">Easy</span> <span
-					class="text-green-600">Parking</span>
-			</p>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Link the CSS -->
+		<link rel="stylesheet" href="../output/style.css">
+		<link rel="stylesheet" href="../output/tailwind.css">
+		<title>Registration</title>
+	</head>
+
+	<body>
+		<!-- Nav bar -->
+		<nav class="nav w-full h-16 bg-slate-300 fixed">
+			<div class="organization text-3xl font-bold">
+				<p class="float-left uppercase pt-4"><span class="text-orange-600">Easy</span> <span
+						class="text-green-600">Parking</span>
+				</p>
+			</div>
+			<ul class="float-right">
+				<li class="inline-block list-none"><a href="#"
+						class="no-underline text-lg uppercase hover:text-emerald-600">Home</a></li>
+				<li class="inline-block list-none"><a href="/aboutPage.html"
+						class="no-underline text-lg uppercase hover:text-emerald-600">About</a></li>
+				<li class="inline-block list-none"><a href="#"
+						class="no-underline text-lg uppercase hover:text-emerald-600">Services</a></li>
+				<li class="inline-block list-none"><a href="#"
+						class="no-underline text-lg uppercase hover:text-emerald-600">Contacts</a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<div class="title">Registration</div>
+			<form action="#" id="registration-form">
+				<!-- User Types -->
+				<div class="user-types">
+					<input type="radio" name="user" id="dot-1">
+					<input type="radio" name="user" id="dot-2">
+					<span class="user-title">What type of user are you?</span>
+					<div class="category">
+						<!-- Garage Owner -->
+						<label for="dot-1">
+							<span class="dot one"></span>
+							<span class="user">Garage Owner</span>
+						</label>
+						<!-- Customer -->
+						<label for="dot-2">
+							<span class="dot two"></span>
+							<span class="user">Customer</span>
+						</label>
+					</div>
+				</div>
+				<div class="user-details">
+					<!-- First Name -->
+					<div class="input-box">
+						<span class="details">First Name</span>
+						<input type="text" name="firstName" id="firstName" placeholder="Enter Your First Name"
+							maxlength="15" minlength="2" required>
+					</div>
+
+					<!-- Last Name -->
+					<div class="input-box">
+						<span class="details">Last Name</span>
+						<input type="text" name="lastName" id="lastName" placeholder="Enter Your Last Name" maxlength="15" minlength="2" required>
+					</div>
+
+					<!-- Email -->
+					<div class="input-box">
+						<span class="details">Email</span>
+						<input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+					</div>
+
+					<!-- Phone Number -->
+					<div class="input-box">
+						<span class="details">Phone Number</span>
+						<input type="text" name="phoneNumber" id="phoneNumber" placeholder="Enter Your Phone Number"
+							required>
+					</div>
+
+					<!-- Password -->
+					<div class="input-box">
+						<span class="details">Password</span>
+						<input type="password" name="password" id="password" placeholder="Enter Your Password" minlength="6" required>
+					</div>
+
+					<!-- Confirm Password -->
+					<div class="input-box">
+						<span class="details">Confirm Password</span>
+						<input type="password" name="confirmPassword" id="confirmPassword"
+							placeholder="Confirm Your Password" minlength="6" required>
+					</div>
+				</div>
+
+				<!-- Register Button -->
+				<div class="button">
+					<input type="submit" value="Register">
+				</div>
+			</form>
 		</div>
-		<ul class="float-right">
-			<li class="inline-block list-none"><a href="#"
-					class="no-underline text-lg uppercase hover:text-emerald-600">Home</a></li>
-			<li class="inline-block list-none"><a href="/aboutPage.html"
-					class="no-underline text-lg uppercase hover:text-emerald-600">About</a></li>
-			<li class="inline-block list-none"><a href="#"
-					class="no-underline text-lg uppercase hover:text-emerald-600">Services</a></li>
-			<li class="inline-block list-none"><a href="#"
-					class="no-underline text-lg uppercase hover:text-emerald-600">Contacts</a></li>
-		</ul>
-	</nav>
-	<div class="container">
-		<div class="title">Registration</div>
-		<form action="#" id="registration-form">
-			<div class="user-details">
-				<!-- First Name -->
-				<div class="input-box">
-					<span class="details">First Name</span>
-					<input type="text" name="firstName" id="firstName" placeholder="Enter Your First Name" required>
-				</div>
+	</body>
 
-				<!-- Last Name -->
-				<div class="input-box">
-					<span class="details">Last Name</span>
-					<input type="text" name="lastName" id="lastName" placeholder="Enter Your Last Name" required>
-				</div>
-
-				<!-- Email -->
-				<div class="input-box">
-					<span class="details">Email</span>
-					<input type="email" name="email" id="email" placeholder="Enter Your Email" required>
-				</div>
-
-				<!-- Phone Number -->
-				<div class="input-box">
-					<span class="details">Phone Number</span>
-					<input type="text" name="phoneNumber" id="phoneNumber" placeholder="Enter Your Phone Number" required>
-				</div>
-
-				<!-- Password -->
-				<div class="input-box">
-					<span class="details">Password</span>
-					<input type="password" name="password" id="password" placeholder="Enter Your Password" required>
-				</div>
-
-				<!-- Confirm Password -->
-				<div class="input-box">
-					<span class="details">Confirm Password</span>
-					<input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Your Password"
-						required>
-				</div>
-			</div>
-			<!-- Gender Details -->
-			<div class="gender-details">
-				<input type="radio" name="gender" id="dot-1">
-				<input type="radio" name="gender" id="dot-2">
-				<span class="gender-title">Gender</span>
-				<div class="category">
-					<!-- Male -->
-					<label for="dot-1">
-						<span class="dot one"></span>
-						<span class="gender">Male</span>
-					</label>
-					<!-- Female -->
-					<label for="dot-2">
-						<span class="dot two"></span>
-						<span class="gender">Female</span>
-					</label>
-				</div>
-			</div>
-			<!-- Register Button -->
-			<div class="button">
-				<input type="submit" value="Register">
-			</div>
-		</form>
-	</div>
-</body>
 </html>
