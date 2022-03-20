@@ -17,6 +17,7 @@ const garageOwnerSchema = new mongoose.Schema({
 	},
 	email: {
 		type: String,
+		unique: true,
 		trim: true,
 		required:[true, 'Must Provide Email']
 	},

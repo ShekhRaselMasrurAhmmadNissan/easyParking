@@ -3,18 +3,22 @@ const connectDB = require('./db/connect')
 const express = require('express')
 const app = express()
 require('dotenv').config()
+const bodyParser = require('body-parser')
 
 // Importing from Login
 const easyParking = require('./routes/easyParking');
+const path = require('path')
 
 // Middleware
+const publicPath = path.join(__dirname, 'public')
+app.use(express.static(publicPath))
 app.use(express.json())
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({
+	extended: true
+}))
 
 // Routes
-app.get('/welcome', (req, res) => {
-	res.send('Welcome to my Easy Parking Application...')
-})
-
 app.use('/', easyParking)
 
 const port = 4000

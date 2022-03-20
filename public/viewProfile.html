@@ -9,7 +9,7 @@
 		<!-- Link the CSS -->
 		<link rel="stylesheet" href="./style.css">
 		<link rel="stylesheet" href="./tailwind.css">
-		<title>Registration</title>
+		<title>View Profile</title>
 	</head>
 
 	<body>
@@ -32,39 +32,19 @@
 			</ul>
 		</nav>
 		<div class="container">
-			<div class="title">Registration</div>
-			<form id="registration-form" method="post">
-				<!-- User Types -->
-				<div class="user-types" id="userTypes">
-					<input type="radio" name="user" id="dot-1">
-					<input type="radio" name="user" id="dot-2">
-					<span class="user-title">What type of user are you?</span>
-					<div class="category">
-						<!-- Garage Owner -->
-						<label for="dot-1">
-							<span class="dot one"></span>
-							<span class="user">Garage Owner</span>
-						</label>
-						<!-- Customer -->
-						<label for="dot-2">
-							<span class="dot two"></span>
-							<span class="user">Customer</span>
-						</label>
-					</div>
-				</div>
+			<div class="title">View Profile</div>
+			<form action="#" id="updateProfile-form">
 				<div class="user-details">
 					<!-- First Name -->
 					<div class="input-box">
 						<span class="details">First Name</span>
-						<input type="text" name="firstName" id="firstName" placeholder="Enter Your First Name"
-							maxlength="15" minlength="2" required>
+						<input type="text" name="firstName" id="firstName" placeholder="Enter Your First Name" required>
 					</div>
 
 					<!-- Last Name -->
 					<div class="input-box">
 						<span class="details">Last Name</span>
-						<input type="text" name="lastName" id="lastName" placeholder="Enter Your Last Name"
-							maxlength="15" minlength="2" required>
+						<input type="text" name="lastName" id="lastName" placeholder="Enter Your Last Name" required>
 					</div>
 
 					<!-- Email -->
@@ -76,33 +56,17 @@
 					<!-- Phone Number -->
 					<div class="input-box">
 						<span class="details">Phone Number</span>
-						<input type="text" name="phoneNumber" id="phoneNumber" placeholder="Enter Your Phone Number"
-							required>
-					</div>
-
-					<!-- Password -->
-					<div class="input-box">
-						<span class="details">Password</span>
-						<input type="password" name="password" id="password" placeholder="Enter Your Password"
-							minlength="6" required>
-					</div>
-
-					<!-- Confirm Password -->
-					<div class="input-box">
-						<span class="details">Confirm Password</span>
-						<input type="password" name="confirmPassword" id="confirmPassword"
-							placeholder="Confirm Your Password" minlength="6" required>
+						<input type="text" name="phoneNumber" id="phoneNumber" placeholder="Enter Your Phone Number" required>
 					</div>
 				</div>
-
-				<!-- Register Button -->
+				<!-- Update Profile Button -->
 				<div class="button">
-					<input type="submit" id="registerButton" value="Register">
+					<input type="submit" value="Update Profile">
 				</div>
 			</form>
 		</div>
 
-		<script src="./register.js"></script>
+		<script src="'./viewProfile.js'"></script>
 	</body>
 
 </html>

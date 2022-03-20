@@ -40,7 +40,7 @@ router.route('/customerReservation').get(customerReservation)
 router.route('/customerReserve').post(customerReserve)
 // Agent Options
 router.route('/agentAddGarage').post(agentAddGarage)
-router.route('/agentEditProfile').patch(agentEditProfile)
+router.route('/agentEditProfile/:id').patch(agentEditProfile)
 router.route('/agentManageGarage').patch(agentManageGarage)
 router.route('/agentProfile/:id').get(agentProfile)
 router.route('/agentReservations').get(agentReservations)

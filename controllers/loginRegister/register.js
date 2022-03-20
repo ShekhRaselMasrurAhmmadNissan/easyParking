@@ -17,6 +17,7 @@ const customerRegister = async (req, res) => {
 const garageOwnerRegister = async (req, res) => {
 	try {
 		const garageOwner = await GarageOwnerInformation.create(req.body)
+		// console.log(garageOwner)
 		res.status(201).json({
 			garageOwner
 		})
