@@ -32,12 +32,13 @@
 			</ul>
 		</nav>
 		<div class="container">
+			<div class="error" id="error" name="error"></div>
 			<div class="title">Registration</div>
-			<form id="registration-form" method="post">
+			<form id="registration-form" method="post" action="/register">
 				<!-- User Types -->
 				<div class="user-types" id="userTypes">
-					<input type="radio" name="user" id="dot-1">
-					<input type="radio" name="user" id="dot-2">
+					<input type="radio" name="user" value="garageOwner" id="dot-1">
+					<input type="radio" name="user" value="customer" id="dot-2">
 					<span class="user-title">What type of user are you?</span>
 					<div class="category">
 						<!-- Garage Owner -->
@@ -102,7 +103,7 @@
 			</form>
 		</div>
 
-		<script src="./register.js"></script>
+		<!-- <script src="../controllers/loginRegister/register.js"></script> -->
 	</body>
 
 </html>

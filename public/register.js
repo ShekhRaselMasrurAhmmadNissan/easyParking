@@ -5,26 +5,28 @@ const bodyParser = require('body-parser')
 // Assigning the HTML to corresponding variables
 const registerFormDOM = document.getElementById('registration-form')
 const userTypesDOM = document.getElementById('userTypes')
-const firstNameDOM = document.getElementById('firstName').value
-const lastNameDOM = document.getElementById('lastName').value
-const emailDOM = document.getElementById('email').value
-const phoneNumberDOM = document.getElementById('phoneNumber').value
-const passwordDOM = document.getElementById('password').value
+const firstNameDOM = req.body.firstName
+const lastNameDOM = req.body.lastName
+const emailDOM = req.body.email
+const phoneNumberDOM = req.body.phoneNumber
+const passwordDOM = req.body.password
 const confirmPasswordDOM = document.getElementById('confirmPassword').value
 const registerButtonDOM = document.getElementById('registerButton')
 
-registerFormDOM.addEventListener('submit', (e) => {
+registerFormDOM.addEventListener('submit', async (e) => {
 	// const el = e.target()
 	e.preventDefault()
-	const firstName = req.body.firstName
-	const lastName = req.body.lastName
-	const email = req.body.email
-	const phoneNumber = req.body.phoneNumber
-	const password = req.body.password
-
+	const firstName = firstNameDOM
+	const lastName = lastNameDOM
+	const email = emailDOM
+	const phoneNumber = phoneNumberDOM
+	const password = passwordDOM
+	console.log("Hello everyone");
+	console.log(firstName);
 	try {
-		await axios.post('/register', {firstName, lastName, email, phoneNumber, password})
+		await axios.post('/register', { "firstName": firstName, "lastName": lastName, "email": email, "phoneNumber": phoneNumber, "password": password })
 	} catch (error) {
 		console.log(error);
 	}
 })
+

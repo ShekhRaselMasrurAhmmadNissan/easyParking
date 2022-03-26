@@ -4,7 +4,10 @@ const router = express.Router()
 
 // ***-Importing from controllers-***
 // Login Register
-const { login, register } = require('../controllers/loginRegister/loginRegisterExports')
+const {
+	login,
+	register
+} = require('../controllers/loginRegister/loginRegisterExports')
 // Homepage
 const homePage = require('../controllers/homePage/homePage')
 // Customer Options

@@ -1,30 +1,41 @@
 const CustomerInformation = require('../../models/customerModel')
 const GarageOwnerInformation = require('../../models/garageOwnerModel')
 
-const customerRegister = async (req, res) => {
+const register = async (req, res) => {
 	try {
-		const customer = await CustomerInformation.create(req.body)
-		res.status(201).json({
-			customer
-		})
-	} catch (error) {
-		res.status(500).json({
-			msg: error
-		})
-	}
-}
+		const alert = req.body.alert
+		const radioButtonValue = req.body.user
+		const firstName = req.body.firstName
+		const lastName = req.body.lastName
+		const email = req.body.email
+		const phoneNumber = req.body.phoneNumber
+		const password = req.body.password
 
-const garageOwnerRegister = async (req, res) => {
-	try {
-		const garageOwner = await GarageOwnerInformation.create(req.body)
-		// console.log(garageOwner)
-		res.status(201).json({
-			garageOwner
-		})
+		const data = {
+			"firstName": firstName,
+			"lastName": lastName,
+			"email": email,
+			"phoneNumber": phoneNumber,
+			"password": password
+		}
+		// const radioButtonValue = document.querySelector('input[type="radio"]:checked')
+
+		if (radioButtonValue === "garageOwner") {
+			const garageOwner = await GarageOwnerInformation.create(data)
+			res.status(201).redirect('index.html')
+			console.log("Data Inserted Successfully... Garage Owner...");
+		} else {
+			const customer = await CustomerInformation.create(data)
+			res.status(201).redirect('index.html')
+			console.log("Data Inserted Successfully... Customer...");
+		}
 	} catch (error) {
-		res.status(500).json({error})
+		// alert.value = error.message
+		res.status(500).json({
+			error
+		})
 	}
 }
 
 // Exporting
-module.exports = garageOwnerRegister
+module.exports = register
